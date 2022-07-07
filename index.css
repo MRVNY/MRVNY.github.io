@@ -12,12 +12,20 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: auto;
   cursor: pointer;
+  font-family: 'Avenir';
 }
 
 p {
     text-align: center;
+    width: 100%;
+    font-family: 'Avenir';
+    /* background-color: gray; */
+}
+
+a {
+    padding: 1%;
 }
 
 .button-53 {
@@ -79,12 +87,12 @@ p {
     font-size: 16px;
     background: transparent;
     border: none;
-    position: relative;
+    position:relative;
     color: #f0f0f0;
     cursor: pointer;
     z-index: 1;
     padding: 10px 20px;
-    justify-content: center;
+    justify-content:center;
     white-space: nowrap;
     user-select: none;
     -webkit-user-select: none;
