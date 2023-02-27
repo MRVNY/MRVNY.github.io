@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body>
+<body onload="getLocation()">
 
 <h2>JavaScript Geolocation API</h2>
 <p>Click the button to get your coordinates.</p>
@@ -11,6 +11,7 @@
 
 <script>
 const x = document.getElementById("demo");
+
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
