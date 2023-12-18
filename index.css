@@ -108,7 +108,7 @@ nav ul li{
     background: #fff;
     position: absolute;
     left: 0;
-    bottom: -4px;
+    bottom: 0px;
     transition: 0.3s;
 }
 
