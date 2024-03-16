@@ -7,30 +7,85 @@
 <head>
     <title>Portfolio</title>
     <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
 </head>
 
-<body>
+<body onload="onLoadGame()">
 <div id="header">
     <div class="container">
         <nav>
             <ul>
-                <!-- <li><img src="images/IMG_0146.jpg" class="logo"></li> -->
                 <li><h1>Qingyuan Yao</h1> </li>
             </ul>
-            
+
+            <!-- Links -->
             <ul>
                 <li><a href='./pdfs/CV_2024.pdf' class="click">CV</a></li>
                 <li><a href="https://github.com/MRVNY" class="click">GitHub</a></li>
                 <li><a href="https://www.linkedin.com/in/qingyuan-yao-9221731b9/" class="click">LinkedIn</a></li>
                 <li><a href="https://open.spotify.com/artist/2T7lcvKqx72yM7d5wY1Rqr?si=GtJpFlJ3QhKwqfQWNUEGcg" class="click">Spotify_Artist</a></li>
-                <!-- <li><a href="#">About Me</a></li> -->
             </ul>
         </nav>
 
-        <div class="header-text">
-            <h1>Game Portfolio</h1>
-            <div class="text">
-                Video games and board games I made in school and personal projects, game jams, and game design classes.
+        <div class="row">
+            <div class="column" id="sidebar">
+                <!-- Table of contents -->
+                <h2>Table of Contents</h2>
+                <ul>
+                    <!-- <li>
+                        <a class="click3" onclick="jumpTo('camera')">Ongoing: Untitled Camera Game</a>
+                        <br>
+                        <tag>#Unity #PersonalProject</tag>
+                    </li> -->
+                    <li>
+                        <a class="click3" onclick="jumpTo('zhuiyi')">追忆 - In Search Of Lost Words</a>
+                        <br> <tag class="tag">#Unity #SchoolProject</tag>
+                    </li>
+                    <li>
+                        <a class="click3" onclick="jumpTo('floop')">Grand Gathering in Floop Town</a>
+                        <br> <tag class="tag">#UnrealEngine #GameJam #C++ #Blueprint</tag>
+                    </li>
+                    <li>
+                        <a class="click3" onclick="jumpTo('spy')">SPY</a>
+                        <br> <tag class="tag">#Unity #SeriousGame #SchoolProject</tag>
+                    </li>
+                    <li>
+                        <a class="click3" onclick="jumpTo('chamois')">Chamois</a>
+                        <br> <tag class="tag">#Unity #SeriousGame #Internship</tag>
+                    </li>
+                    <li>
+                        <a class="click3" onclick="jumpTo('dice')">PastelDices</a>
+                        <br> <tag class="tag">#Unity #GameJam</tag>
+                    </li>
+                    <li>
+                        <a class="click3" onclick="jumpTo('quadravity')">Quadravity</a>
+                        <br> <tag class="tag">#Unity #GameJam</tag>
+                    </li>
+                    <li>
+                        <a class="click3" onclick="jumpTo('enjmin')">Creative Document</a>
+                        <br> <tag class="tag">#GameDesign</tag>
+                    </li>
+                    <li>
+                        <a class="click3" onclick="jumpTo('splatable')">Splatable</a>
+                        <br> <tag class="tag">#BoardGame</tag>
+                    </li>
+                    <li>
+                        <a class="click3" onclick="jumpTo('zi')">字</a>
+                        <br> <tag class="tag">#BoardGame</tag>
+                    </li>
+                    <li>
+                        <a class="click3" onclick="jumpTo('flop')">Don't Flop</a>
+                        <br> <tag class="tag">#Unity</tag>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="column" id="header-text">
+                <!-- Intro -->
+                <h1>Game Portfolio</h1>
+                <div class="text">
+                    Video games and board games I made in school and personal projects, game jams, and game design classes.
+                </div>
             </div>
         </div>
     </div>
@@ -38,7 +93,7 @@
 
 
 <!-- -------------Zhuiyi---------------- -->
-<div class="block">
+<div class="block" id="zhuiyi">
     <h1>追忆 - In Search Of Lost Words (2023)</h1>
 
     <div class="text">
@@ -72,7 +127,7 @@
 
 
 <!-- ------------------Floop-------------------->
-<div class="block">
+<div class="block" id="floop">
     <h1>Grand Gathering in Floop Town (2023)</h1>
 
     <div class="text">        
@@ -96,7 +151,7 @@
 </div>
 
 <!-- ------------------SPY-------------------- -->
-<div class="block">
+<div class="block" id="spy">
     <h1>SPY (2023)</h1>
 
     <div class="text">
@@ -124,7 +179,7 @@
 
 
 <!-- ------------------Chamois---------------------->
-<div class="block">
+<div class="block" id="chamois">
     <h1>Chamois (2022)</h1>
 
     <div class="text">
@@ -156,7 +211,7 @@
 </div>
 
 <!-- ------------------PastelDices-------------------->
-<div class="block">
+<div class="block" id="dice">
     <h1>PastelDices (2022)</h1>
 
     <div class="text">
@@ -180,7 +235,7 @@
 
 <!-- ------------------Quadravity-------------------->
 
-<div class="block">
+<div class="block" id="quadravity">
     <h1>Quadravity (2021)</h1>
 
     <div class="text">
@@ -203,7 +258,7 @@
 
 <!-- ------------------Creative-------------------->
 
-<div class="block">
+<div class="block" id="enjmin">
     <h1>Creative Document (2021)</h1>
 
     <div class="text">
@@ -239,7 +294,7 @@
 
 <!-- ------------------Splatable-------------------->
 
-<div class="block">
+<div class="block" id="splatable">
     <h1>Splatable (2021)</h1>
 
     <div class="text">
@@ -258,7 +313,7 @@
 
 <!-- ------------------Zi-------------------->
 
-<div class="block">
+<div class="block" id="zi">
     <h1>字 (2020)</h1>
 
     <div class="text">
@@ -278,7 +333,7 @@
 
 <!-- ------------------Don't Flop-------------------->
 
-<div class="block">
+<div class="block" id="flop">
     <h1>Don't Flop (2019)</h1>
 
     <div class="text">

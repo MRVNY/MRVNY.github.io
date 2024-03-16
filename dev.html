@@ -1,0 +1,128 @@
+<!DOCTYPE html> 
+
+<html>
+
+<meta charset="utf-8">
+
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+</head>
+
+<body onload="onLoadDev()">
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul>
+                <!-- <li><img src="images/IMG_0146.jpg" class="logo"></li> -->
+                <li><h1>Qingyuan Yao</h1> </li>
+            </ul>
+            
+            <ul>
+                <li><a href='./pdfs/CV_2024.pdf' class="click">CV</a></li>
+                <li><a href="https://github.com/MRVNY" class="click">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/qingyuan-yao-9221731b9/" class="click">LinkedIn</a></li>
+                <li><a href="https://open.spotify.com/artist/2T7lcvKqx72yM7d5wY1Rqr?si=GtJpFlJ3QhKwqfQWNUEGcg" class="click">Spotify_Artist</a></li>
+                <!-- <li><a href="#">About Me</a></li> -->
+            </ul>
+        </nav>
+
+                <div class="row">
+                    <div class="column" id="sidebar">
+                        <!-- Table of contents -->
+                        <h2>Table of Contents</h2>
+                        <ul>
+                            <li>
+                                <a class="click3" onclick="jumpTo('justlmd')">JustLMD - Deep Generative AI</a>
+                                <br>
+                                <tag>#DeepLearning #Internship #PyTorch #Tokyo</tag>
+                            </li>
+                            <li>
+                                <a class="click3" onclick="jumpTo('ecotopia')">Multi-Agent Simulation of Ecotopia</a>
+                                <br>
+                                <tag>#MultiAgentSystem #GAMA</tag>
+                            </li>
+                            <li>
+                                <a class="click3" onclick="jumpTo('metarl')">Meta-Reinforcement Learning Project</a>
+                                <br>
+                                <tag>#ReinforcementLearning #Tensorflow</tag>
+                            </li>
+                            <li>
+                                <a class="click3" onclick="jumpTo('hcibook')">HCI Projet: Immersive Book</a>
+                                <br>
+                                <tag>#HCI #UX #Prototyping</tag>
+                            </li>
+                            <li>
+                                <a class="click3" onclick="jumpTo('hcigi')">HCI Project: Gestures vs. Keyboard</a>
+                                <br>
+                                <tag>#HCI #Web #JavaScript</tag>
+                            </li>
+                            <li>
+                                <a class="click3" onclick="jumpTo('dedale')">Projet Dedale</a>
+                                <br>
+                                <tag>#MultiAgentSystem #Java</tag>
+                            </li>
+                            <li>
+                                <a class="click3" onclick="jumpTo('drone')">Projet système de vision temps réel pour drones</a>
+                                <br>
+                                <tag>#System #Image #C #C++</tag>
+                            </li>
+                            <li>
+                                <a class="click3" onclick="jumpTo('web')">Projet Technologie du Web</a>
+                                <br>
+                                <tag>#Web #JavaScript #HTML #CSS #Node.js</tag>
+                            </li>
+                        </ul>
+                    </div>
+                
+                    <div class="column" id="header-text">
+                        <!-- Intro -->
+                        <h1>Game Portfolio</h1>
+                        <div class="text">
+                            Video games and board games I made in school and personal projects, game jams, and game design classes.
+                        </div>
+                    </div>
+                </div>
+
+    </div>
+</div>
+
+<div id="blocks">
+    <!-- -------------Zhuiyi---------------- -->
+    <div class="block">
+        <h1>追忆 - In Search Of Lost Words (2023)</h1>
+
+        <div class="text">
+            A 3D first-person perspective game that follows the story of a young person on
+            their journey to recover their mother tongue.
+            <br>
+            <h6>
+            Main project of the course Highly Interactive EnVironment (EVHI)
+            <br>
+            The game teaches people to write 5 simple Chinese
+            characters, it takes a Wacom graphic tablet with a Nintendo Switch Joycon, or keyboard with mouse as input
+            methods. We have implemented the $P recognizer for character recognition, and Bayesian Knowledge Tracing (BKT) for
+            player modeling and adaptation.</h6>
+        </div>
+
+
+        <p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3nW_ubSfw1I" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </p>
+
+        <button_row>
+            <a class="click2" href="./Zhuiyi/WebGL/index.html">Play Game</a>
+            <a class="click2" href='https://github.com/MRVNY/Zhuiyi'>See Code</a>
+        </button_row>
+    </div>
+</div>
+
+
+</body>
+
+</html>
