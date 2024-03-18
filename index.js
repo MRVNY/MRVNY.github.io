@@ -47,46 +47,31 @@ const web = {
 const devs = [justlmd, ecotopia, metarl, hcibook, hcigi, dedale, drone, web];
 
 function onLoadGame(){
-    //check the screen is horizontal or vertical
-    var isHorizontal = window.innerWidth > window.innerHeight;
+    var sidebar = document.getElementById("sidebar");
+    var headertext = document.getElementById("header-text");
 
-    if (!isHorizontal){
-        //make row #sidebar and #header-text width to 100%
-        var sidebar = document.getElementById("sidebar");
-        var headertext = document.getElementById("header-text");
-        sidebar.style.width = "100%";
-        headertext.style.width = "100%";
-
+    if (window.innerWidth < window.innerHeight || window.innerWidth / window.innerHeight > 9 / 16){
         //inverse the order of the columns #sidebar and #header-text
         headertext.parentNode.insertBefore(headertext, sidebar);
 
-        //double height of #header
-        var header = document.getElementById("header");
-        header.style.height = "200vh";
-
-        //#sidebar starts from 100vh minus #header-text height
-        //bottom position of headertext
-        // var bottom = headertext.offsetTop + headertext.clientHeight;
-        var margin = window.innerHeight - headertext.clientHeight - headertext.offsetTop;
-        sidebar.style.marginTop = margin + "px";
+        //if aspect ratio is wider than 9:16
+        // if(window.innerWidth/window.innerHeight < 9/16){
+        // //#sidebar starts from 100vh minus #header-text height
+        // var margin = window.innerHeight - headertext.clientHeight - headertext.offsetTop;
+        // sidebar.style.marginTop = margin + "px";
+        // }
     }
-
-    //make sure the text size of .click3 doesn't surpace the width of #sidebar
-    var click3 = document.getElementsByClassName("click3");
-    var tags = document.getElementsByClassName("tag");
-    var sidebar = document.getElementById("sidebar");
-
-    for (i = 0; i < click3.length; i++){
-        click3[i].style.fontSize = sidebar.clientWidth / 20 + "px";
-    }
-    for (i = 0; i < tags.length; i++){
-        tags[i].style.fontSize = sidebar.clientWidth / 30 + "px";
-    }
-
-    
 }
 
 function onLoadDev(){
+
+    var sidebar = document.getElementById("sidebar");
+    var headertext = document.getElementById("header-text");
+
+    if (window.innerWidth < window.innerHeight || window.innerWidth / window.innerHeight > 9 / 16) {
+        //inverse the order of the columns #sidebar and #header-text
+        headertext.parentNode.insertBefore(headertext, sidebar);
+    }
 
     for (i = 0; i < devs.length; i++){
         var entry = devs[i];
