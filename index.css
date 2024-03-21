@@ -288,9 +288,9 @@ tag {
 }
 
 #art .youtube{
-    width: 50vw;
-    height: 28.125vw; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-    max-width: 100%;
+    width: 50vh;
+        height: 28.125vh;
+        max-width: 100%;
 }
 
 #art .grid {
