@@ -12,6 +12,9 @@
     .block {
         height: 100vh;
     }
+    /* h1 {
+        color: blue;
+    } */
 }
 
 @media (orientation: landscape) {
@@ -25,10 +28,14 @@
             --sideW: 0.3;
             --headerTextW: 0.7;
     }
+
+    /* h1 {
+        color: green;
+    } */
 }
 
 /*if ratio smaller than  16:9 */
-@media (aspect-ratio > 16/9) {
+@media (aspect-ratio > 16/7) {
     /* body{
         background-color: red;
     } */
@@ -256,7 +263,7 @@ tag {
     color: #c6c6c6;
 }
 
-@media (orientation: portrait), (aspect-ratio > 16/9) {
+@media (orientation: portrait), (aspect-ratio > 16/7) {
     #header-text .text {
         width: 100%;
         font-size: calc(100vw / 30);
