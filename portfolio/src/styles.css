@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* add shortcuts */
+@layer utilities {
+    .background-tint {
+        @apply bg-gray-500 bg-blend-multiply;
+    }
+    .black-dot-2 {
+        @apply border-2 border-dotted border-black p-2
+    }
+}
+
+a, button {
+    @apply hover:cursor-hand;
+}
