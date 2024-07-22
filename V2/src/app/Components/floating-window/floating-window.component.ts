@@ -1,0 +1,90 @@
+import {Component, ElementRef, ViewChild} from '@angular/core';
+import {CdkDrag, CdkDragHandle, DragDropModule} from '@angular/cdk/drag-drop';
+import {CommonModule, NgForOf} from '@angular/common';
+import { trigger, state, style, animate, transition, } from '@angular/animations';
+import {Input} from '@angular/core';
+
+@Component({
+  selector: 'app-floating-window',
+  standalone: true,
+  imports: [
+    CdkDrag,
+    CdkDragHandle,
+    NgForOf
+  ],
+  template: `
+    <div cdkDrag class="border-black relative bg-white self-center border-2 m-5" [@floatingAnimation]="animationState"
+        (click)="BringToFront()" #whole>
+      <!-- window bar -->
+      <div class="flex justify-between items-center w-full h-10 p-1 bg-black" cdkDragHandle #bar>
+        <div class="h-full aspect-square"></div>
+        <h1 class="font-pixel text-4xl text-white self-center">{{ title }}</h1>
+        <img
+          src="assets/cancel.png" class="h-full aspect-square cursor-hand active:brightness-90 hover:brightness-75"
+            (click)="CloseWindow()"/>
+      </div>
+
+      <!-- TABLE -->
+      <table class="w-full border-white border-2">
+        <ng-content></ng-content>
+      </table>
+    </div>
+  `,
+  animations: [
+    trigger('floatingAnimation', [
+      state('middle', style({ top: '0px' })),
+      state('middle2', style({ top: '0px' })),
+      state('up', style({ top: '-10px' })),
+      state('down', style({ top: '10px' })),
+
+      transition('stop => middle', [animate('1s ease-in-out')]),
+      transition('middle => up', [animate('1s ease-out')]),
+      transition('up => middle2', [animate('1s ease-in')]),
+      transition('middle2 => down', [animate('1s ease-out')]),
+      transition('down => middle', [animate('1s ease-in')]),
+    ]),
+  ],
+})
+export class FloatingWindowComponent {
+  @Input() title: string = '';
+  @ViewChild('whole') whole!: ElementRef;
+  @ViewChild('bar') bar!: ElementRef;
+
+  animationState: string = '';
+
+  constructor() {
+    this.startAnimation();
+  }
+
+  startAnimation() {
+    setTimeout(() => {
+      this.animationState = 'middle';
+
+      setInterval(() => {
+        if (this.animationState === 'middle') {
+          this.animationState = 'up';
+        } else if (this.animationState === 'up') {
+          this.animationState = 'middle2';
+        }
+        else if (this.animationState === 'middle2') {
+          this.animationState = 'down';
+        }
+        else if (this.animationState === 'down') {
+          this.animationState = 'middle';
+        }
+      }, 1000);
+    }, Math.random() * 2000);
+  }
+
+  BringToFront() {
+    //bring window to front of another window
+
+  }
+
+  CloseWindow() {
+    //close window
+    //get parent
+    this.whole.nativeElement.parentNode.removeChild(this.whole.nativeElement);
+
+  }
+}
