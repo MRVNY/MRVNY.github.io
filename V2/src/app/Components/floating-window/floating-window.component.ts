@@ -3,6 +3,7 @@ import {CdkDrag, CdkDragHandle, DragDropModule} from '@angular/cdk/drag-drop';
 import {CommonModule, NgForOf} from '@angular/common';
 import { trigger, state, style, animate, transition, } from '@angular/animations';
 import {Input} from '@angular/core';
+import { WindowService } from '@services/window.service';
 
 @Component({
   selector: 'app-floating-window',
@@ -21,7 +22,7 @@ import {Input} from '@angular/core';
         <h1 class="font-pixel text-4xl text-white self-center">{{ title }}</h1>
         <img
           src="assets/cancel.png" class="h-full aspect-square cursor-hand active:brightness-90 hover:brightness-75"
-            (click)="CloseWindow()"/>
+            (mousedown)="CloseWindow()"/>
       </div>
 
       <!-- TABLE -->
@@ -52,7 +53,7 @@ export class FloatingWindowComponent {
 
   animationState: string = '';
 
-  constructor() {
+  constructor(private windowService: WindowService) {
     this.startAnimation();
   }
 
@@ -78,7 +79,11 @@ export class FloatingWindowComponent {
 
   BringToFront() {
     //bring window to front of another window
-
+    //set z-index to max
+    const z = this.windowService.getLayerCount();
+    console.log(z);
+    this.whole.nativeElement.style.zIndex = z;
+    console.log(this.whole.nativeElement.style.zIndex);
   }
 
   CloseWindow() {

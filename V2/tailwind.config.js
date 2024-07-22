@@ -19,6 +19,10 @@ module.exports = {
       overflow: {
         'hidden': 'hidden',
       },
+
+      maxWidth: {
+        '600px' : '600px'
+      }
       
     },
   },

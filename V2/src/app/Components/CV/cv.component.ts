@@ -18,22 +18,22 @@ import {MatButton} from "@angular/material/button";
 
       <app-floating-window title="Portfolio" class="w-72">
         <div class="flex justify-center flex-col items-center">
-        <a  class="hover:cursor-hand border-2 w-full p-2 text-center"
+        <a  class="hover:cursor-hand w-full p-2 text-center"
             href="https://qingyuan.games/V1/" mat-button>Go</a>
         </div>
       </app-floating-window>
 
       <app-floating-window title="Education"
-        class="sm:w-2/3 md:lg:w-1/2 xl:w-1/3"><app-education/></app-floating-window>
+        class="w-fwindow"><app-education/></app-floating-window>
 
       <app-floating-window title="Experience"
-                           class="sm:w-2/3 md:lg:w-1/2 xl:w-1/3"><app-experience/></app-floating-window>
+                           class="w-fwindow"><app-experience/></app-floating-window>
 
       <app-floating-window title="Hard Skills"
-        class="sm:w-2/3 md:lg:w-1/2 xl:w-1/3"><app-hard-skill/></app-floating-window>
+        class="w-fwindow"><app-hard-skill/></app-floating-window>
 
       <app-floating-window title="Soft Skills"
-        class="sm:w-2/3 md:lg:w-1/2 xl:w-1/3"><app-soft-skills/></app-floating-window>
+        class="w-fwindow"><app-soft-skills/></app-floating-window>
 
     </div>
   `,

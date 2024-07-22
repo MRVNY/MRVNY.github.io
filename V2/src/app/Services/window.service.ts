@@ -7,4 +7,9 @@ export class WindowService {
   layerCount = 0;
 
   constructor() { }
+
+  getLayerCount() {
+    this.layerCount++;
+    return this.layerCount;
+  }
 }
