@@ -1,16 +1,19 @@
 import { Component } from '@angular/core';
 import { CvComponent } from "../CV/cv.component";
+import { PortfolioComponent } from '@components/portfolio/portfolio.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CvComponent],
+  imports: [CvComponent, PortfolioComponent],
   template: `
   <!-- BACKGROUD -->
 
 
-    <div class="flex flex-col z-50 justify-center">
-      <app-windows></app-windows>
+    <div class="flex flex-col z-50 justify-between items-center">
+      <app-cv class="w-full"></app-cv>
+
+      <app-portfolio class="w-full"/>
     </div>
 
 
