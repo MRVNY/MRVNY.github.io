@@ -32,7 +32,7 @@ import {MatButton} from "@angular/material/button";
       <app-floating-window title="Old Portfolio" class="w-96 self-center">
         <div class="flex justify-center flex-col items-center">
         <a  class="hover:cursor-hand w-full p-2 text-center"
-            href="https://qingyuan.games/V1/" mat-button>Go</a>
+            href="assets/V1/index.html" mat-button>Go</a>
         </div>
       </app-floating-window>
 
