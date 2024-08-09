@@ -29,7 +29,7 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
         <!-- <ng-content></ng-content> -->
         <div class="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
          <app-floating-window *ngFor="let project of projects" title="" #window>
-          <div class="flex flex-col text-justify">
+          <div class="flex flex-col text-justify space-y-2 pb-2">
             <td class="text-4xl border-2 font-bold border-white text-center bg-black text-white">{{ project.title }}</td>
             <td class="text-xl border-2 font-bold border-white">{{ project.text1 }}</td>
             <td class="border-2 border-white" [innerHTML]="project.text2"></td>
@@ -42,14 +42,14 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
              <div class="w-full self-center flex justify-center items-center" *ngIf="project.youtube!==undefined">
             <youtube-player *ngIf="project.youtube!==undefined" [videoId]="project.youtube" [width]="videoWidth"/>
              </div>
-            <!-- <iframe *ngIf="project.youtube!==undefined" [src]="this._sanitizer.bypassSecurityTrustResourceUrl(project.youtube)" 
-            frameborder="0" class="w-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-
-            <!-- website -->
-             <!-- <iframe *ngIf="project.website !== undefined" [src]="this._sanitizer.bypassSecurityTrustResourceUrl(project.website)" frameborder="0" class="w-full h-64 bg-black"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> -->
-      <!-- </iframe> -->
+   
+            <!-- buttons -->
+            <div *ngIf="project.buttons" class="flex justify-center">
+              <button *ngFor="let button of getButtons(project.buttons)" (mousedown)="openLink(button.url)"
+              class="bg-black text-white font-pixel cursor-hand text-2xl mx-5 px-2">
+                {{ button.label.toUpperCase() }} 
+              </button>
+            </div>
             
           </div>
          </app-floating-window>
@@ -63,21 +63,19 @@ export class PortfolioComponent implements OnInit{
   @ViewChild('window') floating!: FloatingWindowComponent;
   projects: any;
   videoWidth: number = 400;
-  constructor(private jsonService: JsonService, public _sanitizer: DomSanitizer) {
-    
-  }
+  constructor(private jsonService: JsonService, public _sanitizer: DomSanitizer) {}
 
   ngOnInit(): void {
     this.projects = this.jsonService.projects;
-    // for (let project of this.projects) {
-    //   if (project.youtube !== undefined) {
-    //     // project.youtube = this._sanitizer.bypassSecurityTrustResourceUrl(project.youtube);
-    //     //get video id from youtube url
-    //     project.youtube = project.youtube.split('v=')[1];
-    //     console.log(project.youtube);
-    //   }
-    // }
-    // sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2
     this.videoWidth = this.floating.whole.nativeElement.clientWidth;
+  }
+
+  getButtons(buttons: { [key: string]: string }) {
+    return Object.keys(buttons).map(key => ({ label: key, url: buttons[key] }));
+  }
+
+  openLink(url: string) {
+    console.log("url:" + url);
+    window.open(url, '_blank');
   }
 }

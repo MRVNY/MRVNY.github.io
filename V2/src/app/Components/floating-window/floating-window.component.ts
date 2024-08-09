@@ -81,9 +81,9 @@ export class FloatingWindowComponent {
     //bring window to front of another window
     //set z-index to max
     const z = this.windowService.getLayerCount();
-    console.log(z);
+    // console.log(z);
     this.whole.nativeElement.style.zIndex = z;
-    console.log(this.whole.nativeElement.style.zIndex);
+    // console.log(this.whole.nativeElement.style.zIndex);
   }
 
   CloseWindow() {

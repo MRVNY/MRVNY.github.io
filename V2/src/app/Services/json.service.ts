@@ -23,9 +23,9 @@ export class JsonService {
     "tags": ["Game", "Unity" ,"SchoolProject"],
     "text1": "A 3D first-person perspective game that follows the story of a young person on their journey to recover their mother tongue.",
     "text2": "Main project of the course Highly Interactive EnVironment (EVHI) <br> The game teaches people to write 5 simple Chinese characters, it takes a Wacom graphic tablet with a Nintendo Switch Joycon, or keyboard with mouse as input methods.We have implemented the $P recognizer for character recognition, and Bayesian Knowledge Tracing(BKT) for player modeling and adaptation.",
-    "youtube": "3nW_ubSfw1I",
+    youtube: "3nW_ubSfw1I",
     buttons: {
-    "play": "./Zhuiyi/WebGL/index.html",
+      "play": "https://mrvny.itch.io/zhuiyi",
     "code": "https://github.com/MRVNY/Zhuiyi"
     }
   }
@@ -36,7 +36,7 @@ export class JsonService {
     "tags": ["Game", "UnrealEngine" ,"GameJam" ,"C++", "Blueprint"],
     "text1": "It's Christmas in Floop Town and every one is celebrating. You're a giant snowball that wants to reunite everybody... by absorbing them all to make one big ball of Floops.",
     "text2": "Made in 72 hours with Unreal Engine 5.3 for the Cozy Winter Jam 2023.",
-    "youtube": "IJTClHkSyns",
+    youtube: "IJTClHkSyns",
     buttons: {
     "play": "https://baloouis.itch.io/grand-gathering-in-floop-town",
     "code": "https://github.com/MRVNY/Grand-Gathering-In-Floop-Town"
@@ -51,7 +51,7 @@ export class JsonService {
     "text2": "Project of the course Engineering of Serious Games (ISG) <br> Our team added a level editor, a visual novel UI, a map that implements the Competence-based Knowledge Space Theory (CbKST), as well as a tracing mechanism using xAPI.",
     "image": "SPY.jpg",
     buttons: {
-    "report": "./pdfs/Report_SPY_YAO_HU_HUANG.pdf",
+    "report": "assets/pdfs/Report_SPY_YAO_HU_HUANG.pdf",
     "code": "https://github.com/MRVNY/SPY"
     }
   }
@@ -64,7 +64,7 @@ export class JsonService {
     "text2": "I was the solo developer of the game. The internship is based on the prototype already developed by a previous team of students. During the internship, I hugely improved the stability and optimization of the game, while adding new implementations into the game such as a visual novel interface with loadable json, A* pathfinding system, asynchronous execution, and a more extensive save&load system.",
     "image": "Chamois.png",
     buttons: {
-    "report": "./pdfs/ChamoisRapport.pdf",
+    "report": "assets/pdfs/ChamoisRapport.pdf",
     "code": "https://github.com/MRVNY/Chamois"
     }
   }
@@ -92,7 +92,7 @@ export class JsonService {
     "image1": "quad1.png",
     "image2": "quad2.png",
     buttons: {
-    "play": "./Quadravity/index.html",
+      "play": "https://mrvny.itch.io/quadravity",
     "code": "https://github.com/MRVNY/Quadravity"
     }
   }
@@ -105,7 +105,7 @@ export class JsonService {
     "text2": "Story: Grèce ancienne, Arachné a été transformé en une araignée après avoir perdu à Athéna. 1560, une jeune reine de la France brodait le motif qui lui rappelle de son enfance à Florence. 1836, les peuples sur une ile en Ecosse luttait contre la révolution industrielle. 1960, les panneaux Make love, not war! flottaient dans l’océan de jeans à New York… 2010, Chine moderne, les vêtements en tissu mixte sont produites dans les usines… Une jeune fille découvre que les vêtements qu’elle a acheté lors d’un vide-grenier à Shanghai la transportent dans les mémoires des tissus. Ayant obtenu les indices dans ces mémoires, elle retrouve leur vendeuse Arachné qui ne croit plus à la représentation d’humanité par les tissus à cause de la mondialisation et la surconsommation. La fin dépend des choix du joueur.",
     "image": "gamedoc.jpeg",
     buttons: {
-    "report": "./pdfs/DossierCreatif.pdf"
+    "report": "assets/pdfs/DossierCreatif.pdf"
     }
   }
 
@@ -127,7 +127,7 @@ export class JsonService {
     "text1": "A 1v1 strategy game that introduce some Chinese characters. Inspired by one of the Chinese input method on iPhone and the systemic mechanic of Breath Of The Wild",
     "image": "zi.png",
     buttons: {
-    "Game Design Document": "./pdfs/字.pdf"
+    "Game Design Document": "assets/pdfs/字.pdf"
     }
   }
 
@@ -158,7 +158,7 @@ export class JsonService {
     "text1": "I worked in the domain of dance synthesis at National Institute of Informatics in Tokyo, my work consited of:",
     "text2": "1. Creating a new dataset of audio-text-motion by extracting motion data from dance videos using existing deep learning models of 3D pose estimation <br> 2. Implementing a Transformer VAE baseline model to showcase the validity of adding lyrics as a condition in the process of dance motion generation.",
     buttons: {
-    "report": "./pdfs/Internship_Report_YAO.pdf",
+    "report": "assets/pdfs/Internship_Report_YAO.pdf",
     },
     "image": "justlmd.jpg"
   }
@@ -169,7 +169,7 @@ export class JsonService {
     "tags": ["Dev", "MultiAgentSystem" ,"GAMA"],
     "text1": "Simulation of transport, housing, energy, and electricity in a society based on the book Ecotopia. I worked on the housing section of the developThe game is designed to be fun and engaging, and it is based on real-world environmement in GAML.",
     buttons: {
-    "report": "./pdfs/Mosima_Rapport_final.pdf",
+    "report": "assets/pdfs/Mosima_Rapport_final.pdf",
     },
     "image": "ecotopia.jpg"
   }
@@ -181,7 +181,7 @@ export class JsonService {
     "text1": "Reproduction and analysis of the paper Prefrontal Cortex as a Meta-Reinforcement Learning System, which consists of the adaptation of a LSTM model with A2C in Tensorflow.",
     buttons: {
     "code": "https://github.com/MRVNY/IAR_Meta_RL",
-    "report": "./pdfs/Rapport_Meta_RL_YAO_HUANG_HU.pdf",
+    "report": "assets/pdfs/Rapport_Meta_RL_YAO_HUANG_HU.pdf",
     },
     "image": "metarl.jpg"
   }
@@ -193,7 +193,7 @@ export class JsonService {
     "text1": "A Human-Computer Interaction project where we designed the concept of a holographic interactive book, with the practice of user-centered design while following HCI protocols such as making interviews, defining interaction points, persona, design dimensions, and in the end prototyping a demo video.",
     "image": "hcibook.jpg",
     buttons: {
-    "report": "./pdfs/hcibook.pdf"
+    "report": "assets/pdfs/hcibook.pdf"
     }
   }
 
@@ -204,7 +204,7 @@ export class JsonService {
     "text1": "Development of a website that collects and compares gestural and keyboard shortcuts under HCI protocols.",
     buttons: {
     "code": "https://github.com/MRVNY/ProjectGI",
-    "report": "./pdfs/ProjectGI.pdf",
+    "report": "assets/pdfs/ProjectGI.pdf",
     },
     "image": "hcigi.jpg"
   }
@@ -216,7 +216,7 @@ export class JsonService {
     "text1": "Project of the course Fundamentals of Multi-Agent Systems where agents work together to collect treasures.",
     buttons: {
     "code": "https://github.com/MRVNY/Fosyma",
-    "report": "./pdfs/Projet_FoSyMa_2022_CASSAN_YAO.pdf",
+    "report": "assets/pdfs/Projet_FoSyMa_2022_CASSAN_YAO.pdf",
     },
     "image": "dedale.jpg"
   }
@@ -230,7 +230,7 @@ export class JsonService {
     "image": "drone.png",
     buttons: {
     "code": "https://github.com/MRVNY/Projet-Drone",
-    "report": "./pdfs/drone.pdf",
+    "report": "assets/pdfs/drone.pdf",
     }
   }
 
@@ -251,27 +251,37 @@ export class JsonService {
   ForetHuberReeves = {
     "title": "Forêt Huber Reeves",
     "text1": "A memorial website for astrophysicist Hubert Reeves with locations of planted ginkgo trees.",
+    buttons: {
     website: "https://foret-hubert-reeves.github.io/GoogleEarth/index.html",
+    },
     image : "foret.jpg"
   }
 
   WaNaiSa = {
     "title": "Wa-Nai-Sa",
     "text1": "Portfolio website for an artist.",
+    buttons: {
     website: "https://li-shu-meng.github.io/home",
+    },
     image : "lsm.jpg"
   }
 
   KaiSeki = {
     "title": "カイセキ(KaiSeki)",
     "text1": "An app that uses LLM to parse and analyze Japanese sentences with a vertically structured interface",
-    "youtube": "-3Hgl1rmBFA"
+    youtube: "-3Hgl1rmBFA",
+    buttons: {
+      code: "https://github.com/MRVNY/KaiSeki"
+    }
   }
   
   GoutCha = {
     title: "GoutCha.com",
     text1: "Reproduction of the website gout-cha.com (with the consent from the owner) with Angular with a backend database on Azure for user, admin and purchase management.",
-    youtube: "cVbipUWzBG0"
+    youtube: "cVbipUWzBG0",
+    buttons: {
+      code: "https://github.com/MRVNY/gout-cha.com"
+    },
   }
 
   PortfolioV2 = {
