@@ -18,7 +18,7 @@ zhuiyi = {
     "text1": "A 3D first-person perspective game that follows the story of a young person on their journey to recover their mother tongue.",
     "text2": "Main project of the course Highly Interactive EnVironment (EVHI) < br > The game teaches people to write 5 simple Chinese characters, it takes a Wacom graphic tablet with a Nintendo Switch Joycon, or keyboard with mouse as input methods.We have implemented the $P recognizer for character recognition, and Bayesian Knowledge Tracing(BKT) for player modeling and adaptation.",
     "youtube": "https://www.youtube.com/embed/3nW_ubSfw1I",
-    "play": "./Zhuiyi/WebGL/index.html",
+    "play": "https://mrvny.itch.io/zhuiyi",
     "code": "https://github.com/MRVNY/Zhuiyi"
 }
 
@@ -75,7 +75,7 @@ quadravity = {
     "text2": "Made in 48 hours with Unity for the GMTK Game Jam 2021",
     "image1": "quad1.png",
     "image2": "quad2.png",
-    "play": "./Quadravity/index.html",
+    "play": "https://mrvny.itch.io/quadravity",
     "code": "https://github.com/MRVNY/Quadravity"
 }
 
