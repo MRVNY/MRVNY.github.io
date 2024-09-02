@@ -312,7 +312,9 @@ export class JsonService {
     this.ForetHuberReeves, this.WaNaiSa, 
     // this.PortfolioV2,
     // this.VariationsSurTroisVersDeMuxing,
-    this.UntitledCameraGame, this.zhuiyi, this.floop, this.spy, this.chamois, this.dice, this.quadravity, this.enjmin, this.splatable, this.zi, this.flop, this.ecotopia, this.metarl, this.hcibook, this.hcigi, this.dedale, this.drone, this.birdy];
+    this.UntitledCameraGame, this.zhuiyi, this.floop, this.spy, this.chamois, this.dice, this.ecotopia, this.metarl, this.hcibook, this.quadravity, this.enjmin, this.splatable, this.zi, this.flop, this.hcigi, this.dedale, this.drone, 
+    // this.birdy
+  ];
 
 
   constructor () { }
