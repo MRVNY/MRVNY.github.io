@@ -20,17 +20,25 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
           src="assets/cancel.png" class="h-full aspect-square cursor-hand active:brightness-90 hover:brightness-75"
             /> -->
       </div>
-
       <!-- <div>Filter</div> -->
     </div>
+
+
+    <div class=" w-full flex justify-center">
+      <app-floating-window title="Spotify" class="w-fwindow">
+        <iframe class="" 
+        src="https://open.spotify.com/embed/artist/2T7lcvKqx72yM7d5wY1Rqr?utm_source=generator" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </app-floating-window>
+    </div>
+
 
       <!-- TABLE -->
       <!-- <table class="w-full border-white border-2"> -->
         <!-- <ng-content></ng-content> -->
         <div class="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
-         <app-floating-window *ngFor="let project of projects" title="" #window>
+         <app-floating-window *ngFor="let project of projects" title="{{project.title}}" #window>
           <div class="flex flex-col text-justify space-y-2 pb-2">
-            <td class="text-4xl border-2 font-bold border-white text-center bg-black text-white">{{ project.title }}</td>
+            <!-- <td class="text-4xl border-2 font-bold border-white text-center bg-black text-white">{{ project.title }}</td> -->
             <td class="text-xl border-2 font-bold border-white">{{ project.text1 }}</td>
             <td class="border-2 border-white" [innerHTML]="project.text2"></td>
 
@@ -40,7 +48,7 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
 
             <!-- youtube iframe -->
              <div class="w-full self-center flex justify-center items-center" *ngIf="project.youtube!==undefined">
-            <youtube-player *ngIf="project.youtube!==undefined" [videoId]="project.youtube" [width]="videoWidth"/>
+              <youtube-player *ngIf="project.youtube!==undefined" [videoId]="project.youtube" [width]="videoWidth" [height]="videoWidth"/>
              </div>
    
             <!-- buttons -->
@@ -62,7 +70,7 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
 export class PortfolioComponent implements OnInit{
   @ViewChild('window') floating!: FloatingWindowComponent;
   projects: any;
-  videoWidth: number = 400;
+  videoWidth: number = 300;
   constructor(private jsonService: JsonService, public _sanitizer: DomSanitizer) {}
 
   ngOnInit(): void {

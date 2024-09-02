@@ -13,7 +13,7 @@ import {MatButton} from "@angular/material/button";
   standalone: true,
   imports: [QrWindowComponent, HardSkillsComponent, FloatingWindowComponent, EducationComponent, SoftSkillsComponent, ExperienceComponent, MatButton],
   template: `
-    <div class="flex flex-col justify-between items-center">
+    <div class="flex flex-col justify-between items-center w-2/3">
       <app-qr-window class="self-center"></app-qr-window>
 
       <!-- OFFSET -->

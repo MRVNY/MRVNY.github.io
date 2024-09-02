@@ -17,11 +17,11 @@ import { WindowService } from '@services/window.service';
     <div cdkDrag class="border-black relative bg-white self-center border-2 m-5" [@floatingAnimation]="animationState"
         (mousedown)="BringToFront()" #whole>
       <!-- window bar -->
-      <div class="flex justify-between items-center w-full h-10 p-1 bg-black" cdkDragHandle #bar>
-        <div class="h-full aspect-square"></div>
+      <div class="flex justify-between items-center w-full p-1 bg-black" cdkDragHandle #bar>
+        <div class="w-10 aspect-square"></div>
         <h1 class="font-pixel text-4xl text-white self-center">{{ title }}</h1>
         <img
-          src="assets/cancel.png" class="h-full aspect-square cursor-hand active:brightness-90 hover:brightness-75"
+          src="assets/cancel.png" class="w-10 aspect-square cursor-hand active:brightness-90 hover:brightness-75"
             (click)="CloseWindow()"/>
       </div>
 

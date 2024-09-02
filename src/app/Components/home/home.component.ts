@@ -11,7 +11,7 @@ import { PortfolioComponent } from '@components/portfolio/portfolio.component';
 
 
     <div class="flex flex-col z-50 justify-between items-center">
-      <app-cv class="w-full"></app-cv>
+      <app-cv class="w-full flex content-center justify-center"></app-cv>
 
       <app-portfolio class="w-full"/>
     </div>

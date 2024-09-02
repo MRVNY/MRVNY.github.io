@@ -291,7 +291,8 @@ export class JsonService {
 
   RespectMe = {
     title: "RespectMe",
-    text1: "An app that fights sexism with comebacks"
+    text1: "Development of an app that fights sexism and LGBTQ+phobias with comebacks for the association Arborus.",
+    image : "respectme.jpg",
   }
 
   VariationsSurTroisVersDeMuxing = {
@@ -305,10 +306,11 @@ export class JsonService {
   keywords = ["Game", "Unity", "UnrealEngine", "GameJam", "Web", "Dev", "DeepLearning", "HCI", "JavaScript", "HTML", "CSS", "Node.js"];
 
   projects = [
+    this.RespectMe, 
     // this.PastelDices2, 
     this.KaiSeki, this.GoutCha,
     this.ForetHuberReeves, this.WaNaiSa, 
-    // this.PortfolioV2, this.RespectMe, 
+    // this.PortfolioV2,
     // this.VariationsSurTroisVersDeMuxing,
     this.UntitledCameraGame, this.zhuiyi, this.floop, this.spy, this.chamois, this.dice, this.quadravity, this.enjmin, this.splatable, this.zi, this.flop, this.ecotopia, this.metarl, this.hcibook, this.hcigi, this.dedale, this.drone, this.birdy];
 

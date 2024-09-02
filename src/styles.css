@@ -15,7 +15,7 @@
     }
 
     .w-fwindow {
-        @apply sm:w-2/3 md:lg:w-1/2 xl:w-1/2 max-w-600px 
+        @apply sm:w-full md:w-full lg:w-2/3 xl:w-1/2 max-w-600px 
         /* @apply max-w-600px */
     }
 
