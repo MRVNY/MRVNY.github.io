@@ -17,7 +17,7 @@ import {MatButton} from "@angular/material/button";
       <app-qr-window class="self-center"></app-qr-window>
 
       <app-floating-window title="CV" class="w-96 self-center">
-      <div class="flex justify-center flex-col items-center">
+      <div class="hover:cursor-hand flex justify-center flex-col items-center">
       <a  class="hover:cursor-hand w-full p-2 text-center"
           href="assets/pdfs/CV_Sep_2024_FR_EN.pdf" mat-button>Download</a>
         </div>
@@ -37,7 +37,7 @@ import {MatButton} from "@angular/material/button";
         class="w-fwindow -mr-20"><app-soft-skills/></app-floating-window>
 
       <app-floating-window title="Old Portfolio" class="w-96 self-center">
-        <div class="flex justify-center flex-col items-center">
+        <div class="hover:cursor-hand flex justify-center flex-col items-center">
         <a  class="hover:cursor-hand w-full p-2 text-center"
             href="assets/V1/index.html" mat-button>Go</a>
         </div>
