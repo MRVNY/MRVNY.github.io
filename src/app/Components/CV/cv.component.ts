@@ -16,6 +16,13 @@ import {MatButton} from "@angular/material/button";
     <div class="flex flex-col justify-between items-center w-2/3">
       <app-qr-window class="self-center"></app-qr-window>
 
+      <app-floating-window title="CV" class="w-96 self-center">
+      <div class="flex justify-center flex-col items-center">
+      <a  class="hover:cursor-hand w-full p-2 text-center"
+          href="assets/pdfs/CV_Sep_2024_FR_EN.pdf" mat-button>Download</a>
+        </div>
+      </app-floating-window>
+
       <!-- OFFSET -->
       <app-floating-window title="Education"
         class="w-fwindow -mb-20 -ml-20"><app-education/></app-floating-window>
