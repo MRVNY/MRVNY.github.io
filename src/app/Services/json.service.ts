@@ -5,14 +5,14 @@ import { Injectable } from '@angular/core';
 })
 export class JsonService {
   UntitledCameraGame = {
-    "title": "Untitled Camera Game",
+    "title": "Untitled Camera Game (Coming Soon)",
     "id": "ucg",
     "tags": ["Game", "Unity" ,"PersonalProject" ,"Ongoing"],
     "text1": "A 3D visual novel + photographer simulator where a photographer takes photos of models while talking to them to stir up emotions.",
     "text2": "Story: The photographer is known for his technique of exchanging stories with the model and capture expressions on their face. He also recycles stories of models to use it for future shooting sessions. One time his story matched up with a model's story.<br> Gameplay: The player take photos in order to advance the conversation or choose the dialog to say to the model.The player would be able to rotate, zoom, and change focus on the camera in order to get different compositions.When it's time to pick what to say to the model, two key phrases would appear on the screen, the player would then need to focus on the phrase they want to express and click the shutter. This would result different composition of the photo for each choice.",
     "image": "ucg.jpg",
     buttons: {
-    "code": "https://github.com/MRVNY/Untitled-Camera-Game",
+    // "code": "https://github.com/MRVNY/Untitled-Camera-Game",
     "pitch": "https://berry-samba-6ff.notion.site/Pitch-fb6c62363c7d4bf58c20e4dc5efa3bbc?pvs=4"
     }
   }
@@ -291,8 +291,15 @@ export class JsonService {
 
   RespectMe = {
     title: "RespectMe",
-    text1: "Development of an app that fights sexism and LGBTQ+phobias with comebacks for the association Arborus.",
-    image : "respectme.jpg",
+    text1: "An app by the association Arborus, that help you respond to sexist and LGBTQ+phobic jokes/agressions with comebacks.",
+    "text2": "\"Respect me ! est une APP qui te permet de répondre quand tu ne sais plus quoi répondre face à des propos lourds et inappropriés.<br>C’est une APP pour ne pas perdre la face et pour la faire perdre à celui/celle qui prononce ou agit de façon lourde ou inappropriée. <br>C’est aussi une façon de créer une nouvelle culture du Respect de l’Autre, de l’égalité !<br>Et si tu es témoin, cela te permet aussi d’intervenir !\"",
+    image : "respectme.png",
+    // buttons: {
+    //   "Ministère de l'Égalité": "https://www.education.gouv.fr/respectme",
+    //   website: "https://www.arborus.org/respectme",
+    //   "app store": "https://apps.apple.com/fr/app/respect-me/id1560000000",
+    //   "google play": "https://play.google.com/store/apps/details?id=com.arborus.respect"
+    // }
   }
 
   VariationsSurTroisVersDeMuxing = {

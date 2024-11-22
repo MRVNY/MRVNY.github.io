@@ -24,17 +24,17 @@ import {MatButton} from "@angular/material/button";
       </app-floating-window>
 
       <!-- OFFSET -->
-      <app-floating-window title="Education"
-        class="w-fwindow -mb-20 -ml-20"><app-education/></app-floating-window>
+      <!-- <app-floating-window title="Education"
+        class="w-fwindow -mb-20 -ml-20"><app-education/></app-floating-window> -->
 
-      <app-floating-window title="Experience"
-        class="w-fwindow -mb-20 -mr-20"><app-experience/></app-floating-window>
+      <!-- <app-floating-window title="Experience"
+        class="w-fwindow -mb-20 -mr-20"><app-experience/></app-floating-window> -->
 
-      <app-floating-window title="Hard Skills"
-        class="w-fwindow -mb-20 -ml-20"><app-hard-skill/></app-floating-window>
+      <!-- <app-floating-window title="Hard Skills"
+        class="w-fwindow -mb-20 -ml-20"><app-hard-skill/></app-floating-window> -->
 
-      <app-floating-window title="Soft Skills"
-        class="w-fwindow -mr-20"><app-soft-skills/></app-floating-window>
+      <!-- <app-floating-window title="Soft Skills"
+        class="w-fwindow -mr-20"><app-soft-skills/></app-floating-window> -->
 
       <app-floating-window title="Old Portfolio" class="w-96 self-center">
         <div class="hover:cursor-hand flex justify-center flex-col items-center">
