@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from '@components/header/header.component';
 import { FooterComponent } from '@components/footer/footer.component';
 
@@ -21,4 +21,11 @@ export class AppComponent {
   title = 'portfolio';
 
   filler: string = "Graduate of the AI master's program at Sorbonne University. Experienced in Unity and .Net and some web development. Familiar with AI algorithms, HCI, as well as simulated and interactive environments. ";
+
+  constructor(private router: Router) { }
+  
+  ngOnInit(): void {
+    //route to /otw
+    this.router.navigate(['/otw']);
+  }
 }
