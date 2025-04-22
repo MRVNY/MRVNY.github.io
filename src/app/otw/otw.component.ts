@@ -1,0 +1,49 @@
+import { Component } from '@angular/core';
+import { QrWindowComponent } from "../Components/CV/qr-window/qr-window.component";
+import { FloatingWindowComponent } from "../Components/floating/floating.component";
+
+@Component({
+  selector: 'app-otw',
+  standalone: true,
+  imports: [QrWindowComponent, FloatingWindowComponent],
+  template: `
+
+  <!-- BACKGROUD -->
+  <img src="assets/OTW_inv.jpeg" alt="Background" class="absolute w-full h-full object-cover -z-5"/>
+
+
+
+  <div class="min-h-screen relative flex flex-col select-none cursor-pixel font-avenir space-y-5">
+
+  <nav class="z-50 flex justify-center w-full">
+      <div class="bg-black text-white text-6xl font-pixel flex flex-col items-center p-4 pb-0">
+        <a class="text-6xl"
+        routerLink="/home">Outside These Walls</a>
+        <a class="text-2xl"
+        routerLink="/home">Qingyuan</a>
+      </div>
+  </nav>
+
+  <app-qr-window class="self-center" qrCode="assets/OTW.jpg"></app-qr-window>
+
+  <app-floating title="Spotify" link="https://open.spotify.com/album/3cE3lVIJmChsVLNzsuSt1D?si=i1brjgZZRNiuaGWnxVFxIg" class="self-center"/>
+  <app-floating title="YouTube" link="https://youtube.com/playlist?list=OLAK5uy_mJZTjb467X28Ve6aXy0HbvC-wBfP09_rw&si=T8MX-K_aW3mEYs66" class="self-center"/>
+  <app-floating title="NetEase" link="http://163cn.tv/D92QDfb" class="self-center"/>
+
+      
+    </div>
+  
+  `,
+  styles: ``
+})
+export class OtwComponent {
+
+  ngOnInit(): void {
+    //change titles in header
+
+    const header = document.querySelector('app-header') as any;
+    if (header) {
+      header.setTitles("Outside These Walls", "Qingyuan");
+    }
+  }
+}

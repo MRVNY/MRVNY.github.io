@@ -1,20 +1,34 @@
 import { Component } from '@angular/core';
 import { CvComponent } from "../CV/cv.component";
 import { PortfolioComponent } from '@components/portfolio/portfolio.component';
+import { HeaderComponent } from "../header/header.component";
+import { FooterComponent } from "../footer/footer.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CvComponent, PortfolioComponent],
+  imports: [CvComponent, PortfolioComponent, HeaderComponent, FooterComponent],
   template: `
   <!-- BACKGROUD -->
 
+    <div class="min-h-screen relative flex flex-col select-none cursor-pixel font-avenir">
+      <app-header/>
 
-    <div class="flex flex-col z-50 justify-between items-center">
+      <div class="flex-grow mt-5 w-full h-full">
+
+       <div class="flex flex-col z-50 justify-between items-center">
+      <!-- <app-header/> -->
+
       <app-cv class="w-full flex content-center justify-center"></app-cv>
 
       <app-portfolio class="w-full"/>
     </div>
+      </div>
+
+      <app-footer/>
+    </div>
+
+   
 
 
 

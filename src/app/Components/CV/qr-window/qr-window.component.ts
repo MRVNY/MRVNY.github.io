@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Input, ViewChild } from '@angular/core';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { trigger, state, style, animate, transition, } from '@angular/animations';
 
@@ -11,7 +11,7 @@ import { trigger, state, style, animate, transition, } from '@angular/animations
       <div class="flex relative justify-center items-center w-44 h-44 overflow-hidden border-black border-4 rounded-md" 
       [@floatingAnimation]="animationState" cdkDrag >
       <!-- (mouseenter)="animationState='stop'" (mouseleave)="animationState='middle'" #QRbox> -->
-        <img src="assets/QR.png" alt="QR code" class="w-60 h-60 object-cover scale bg-white "/>
+        <img src={{qrCode}} alt="QR code" class="w-60 h-60 object-cover scale bg-white "/>
       </div>
   `,
   animations: [
@@ -31,6 +31,7 @@ import { trigger, state, style, animate, transition, } from '@angular/animations
 })
 
 export class QrWindowComponent {
+  @Input() qrCode: string = 'assets/QR.png';
   animationState: string = '';
 
   constructor() {

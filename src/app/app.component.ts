@@ -18,16 +18,8 @@ import { FooterComponent } from '@components/footer/footer.component';
   <!-- <div class="flex absolute top-0 w-screen h-screen border-4 z-50 border-black">
   </div> -->
 
-    <div class="min-h-screen relative flex flex-col select-none cursor-pixel font-avenir">
-      <app-header/>
-
-
-      <div class="flex-grow mt-5 w-full h-full">
-        <router-outlet/>
-      </div>
-
-      <app-footer/>
-    </div>
+  <router-outlet/>
+  
   `,
 })
 export class AppComponent {
