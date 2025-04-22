@@ -26,6 +26,6 @@ export class AppComponent {
   
   ngOnInit(): void {
     //route to /otw
-    this.router.navigate(['/otw']);
+    // this.router.navigate(['/otw']);
   }
 }
