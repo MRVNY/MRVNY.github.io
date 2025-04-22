@@ -1,26 +1,26 @@
 import { Component } from '@angular/core';
 import { QrWindowComponent } from "../Components/CV/qr-window/qr-window.component";
 import { FloatingWindowComponent } from "../Components/floating/floating.component";
+import { FooterComponent } from "../Components/footer/footer.component";
 
 @Component({
   selector: 'app-otw',
   standalone: true,
-  imports: [QrWindowComponent, FloatingWindowComponent],
+  imports: [QrWindowComponent, FloatingWindowComponent, FooterComponent],
   template: `
 
   <!-- BACKGROUD -->
   <img src="assets/OTW_inv.jpeg" alt="Background" class="absolute w-full h-full object-cover -z-5"/>
 
 
-
-  <div class="min-h-screen relative flex flex-col select-none cursor-pixel font-avenir space-y-5">
+  <div class="min-h-screen relative flex flex-col select-none cursor-pixel font-avenir space-y-6">
 
   <nav class="z-50 flex justify-center w-full">
-      <div class="bg-black text-white text-6xl font-pixel flex flex-col items-center p-4 pb-0">
-        <a class="text-6xl"
+      <div class="bg-black text-white text-6xl font-pixel flex flex-col items-center p-4 pb-0 text-center">
+        <a class="text-4xl"
         routerLink="/home">Outside These Walls</a>
         <a class="text-2xl"
-        routerLink="/home">Qingyuan</a>
+        routerLink="/home">Album by Qingyuan</a>
       </div>
   </nav>
 
@@ -31,6 +31,7 @@ import { FloatingWindowComponent } from "../Components/floating/floating.compone
   <app-floating title="NetEase" link="http://163cn.tv/D92QDfb" class="self-center"/>
 
       
+  <!-- <app-footer/> -->
     </div>
   
   `,

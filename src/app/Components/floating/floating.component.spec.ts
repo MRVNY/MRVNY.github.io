@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FloatingWindowComponent } from './floating-window.component';
+import { FloatingWindowComponent } from './floating.component';
 
-describe('FloatingWindowComponent', () => {
+describe('FloatingComponent', () => {
   let component: FloatingWindowComponent;
   let fixture: ComponentFixture<FloatingWindowComponent>;
 

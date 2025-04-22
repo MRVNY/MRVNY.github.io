@@ -14,7 +14,7 @@ import { WindowService } from '@services/window.service';
     NgForOf
   ],
   template: `
-    <div cdkDrag class="border-black relative bg-white self-center border-2 m-5" [@floatingAnimation]="animationState"
+    <div cdkDrag class="border-black relative bg-white self-center border-2 m-0" [@floatingAnimation]="animationState"
         (mousedown)="BringToFront()" #whole>
       <!-- window bar -->
       <div class="flex justify-between items-center w-full py-1 px-2 bg-black" cdkDragHandle #bar>

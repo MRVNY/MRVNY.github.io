@@ -8,12 +8,7 @@ import { FooterComponent } from '@components/footer/footer.component';
   standalone: true,
   imports: [RouterOutlet, HeaderComponent, FooterComponent],
   template: `
-  <!-- Background -->
-  <div class="flex w-full fixed bg-gray-200 z-0 overflow-hidden h-screen">
-    <p class="m-auto text-justify text-2xl font-light w-full font-times text-white select-none cursor-default">
-      {{filler.repeat(40)}}
-    </p>
-  </div>
+  
   <!-- Border -->
   <!-- <div class="flex absolute top-0 w-screen h-screen border-4 z-50 border-black">
   </div> -->

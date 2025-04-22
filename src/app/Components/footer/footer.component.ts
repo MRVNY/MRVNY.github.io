@@ -7,7 +7,7 @@ import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
   template: `
     <nav class="font-extralight relative w-full bg-black text-white z-50 -bottom-10" #noScrollDiv>
       <div class="flex justify-center pt-10 -bottom-10">
-      Qingyuan YAO © 2024
+      Qingyuan YAO © 2025
       </div>
     </nav>
   `,

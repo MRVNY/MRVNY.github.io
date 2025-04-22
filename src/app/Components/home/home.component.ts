@@ -10,6 +10,12 @@ import { FooterComponent } from "../footer/footer.component";
   imports: [CvComponent, PortfolioComponent, HeaderComponent, FooterComponent],
   template: `
   <!-- BACKGROUD -->
+   <!-- Background -->
+  <div class="flex w-full fixed bg-gray-200 z-0 overflow-hidden h-screen">
+    <p class="m-auto text-justify text-2xl font-light w-full font-times text-white select-none cursor-default">
+      {{filler.repeat(40)}}
+    </p>
+  </div>
 
     <div class="min-h-screen relative flex flex-col select-none cursor-pixel font-avenir">
       <app-header/>
