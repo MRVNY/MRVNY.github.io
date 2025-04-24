@@ -27,7 +27,7 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
     <div class=" w-full flex justify-center">
       <app-floating-window title="Spotify" class="w-fwindow">
         <iframe class="" 
-        src="https://open.spotify.com/embed/artist/2T7lcvKqx72yM7d5wY1Rqr?utm_source=generator" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        src="https://open.spotify.com/embed/album/3cE3lVIJmChsVLNzsuSt1D?utm_source=generator" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       </app-floating-window>
     </div>
 
