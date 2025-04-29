@@ -24,8 +24,8 @@ export class AppComponent {
 
   constructor(private router: Router) { }
   
-  ngOnInit(): void {
-    //route to /otw
-    // this.router.navigate(['/otw']);
-  }
+  // ngOnInit(): void {
+  //   //route to /otw
+  //   // this.router.navigate(['/otw']);
+  // }
 }

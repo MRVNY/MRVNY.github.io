@@ -204,7 +204,7 @@ export class JsonService {
     "text1": "Development of a website that collects and compares gestural and keyboard shortcuts under HCI protocols.",
     buttons: {
     "code": "https://github.com/MRVNY/ProjectGI",
-    "report": "assets/pdfs/ProjectGI.pdf",
+    "report": "assets/pdfs/Rapport_GI.pdf",
     },
     "image": "hcigi.jpg"
   }
