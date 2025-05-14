@@ -9,35 +9,18 @@ import { FooterComponent } from "../footer/footer.component";
   standalone: true,
   imports: [CvComponent, PortfolioComponent, HeaderComponent, FooterComponent],
   template: `
-  <!-- BACKGROUD -->
-   <!-- Background -->
-  <div class="flex w-full fixed bg-gray-200 z-0 overflow-hidden h-screen">
-    <p class="m-auto text-justify text-2xl font-light w-full font-times text-white select-none cursor-default">
-      {{filler.repeat(40)}}
-    </p>
-  </div>
+  <div class="flex-grow mt-5 w-full h-full">
 
-    <div class="min-h-screen relative flex flex-col select-none cursor-pixel font-avenir">
-      <app-header/>
+    <div class="flex flex-col z-50 justify-between items-center">
 
-      <div class="flex-grow mt-5 w-full h-full">
+      <app-cv class="w-full flex content-center justify-center">
 
-       <div class="flex flex-col z-50 justify-between items-center">
-      <!-- <app-header/> -->
-
-      <app-cv class="w-full flex content-center justify-center"></app-cv>
+        </app-cv>
 
       <app-portfolio class="w-full"/>
+
     </div>
-      </div>
-
-      <app-footer/>
-    </div>
-
-   
-
-
-
+  </div>
   `,
   styles: ``
 })
