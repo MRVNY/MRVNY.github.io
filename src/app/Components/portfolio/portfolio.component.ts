@@ -15,7 +15,7 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
          #whole>
       <div class="flex justify-center items-center w-full h-10 p-1 bg-black" cdkDragHandle #bar>
         <!-- <div class="h-full aspect-square"></div> -->
-        <h1 class="font-pixel text-4xl text-white self-center">↓New Portfolio↓</h1>
+        <h1 class="font-pixel text-4xl text-white self-center">↓Portfolio↓</h1>
         <!-- <img
           src="assets/cancel.png" class="h-full aspect-square cursor-hand active:brightness-90 hover:brightness-75"
             /> -->
@@ -25,7 +25,7 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
 
 
     <div class=" w-full flex justify-center">
-      <app-floating-window title="Spotify" class="w-fwindow">
+      <app-floating-window title="Music Project" class="w-fwindow">
         <iframe class="" 
         src="https://open.spotify.com/embed/album/3cE3lVIJmChsVLNzsuSt1D?utm_source=generator" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       </app-floating-window>

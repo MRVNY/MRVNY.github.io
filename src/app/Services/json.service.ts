@@ -248,8 +248,8 @@ export class JsonService {
     "title": "PastelDices 2.0",
   }
 
-  ForetHuberReeves = {
-    "title": "Forêt Huber Reeves",
+  ForetHubertReeves = {
+    "title": "Forêt Hubert Reeves",
     "text1": "A memorial website for astrophysicist Hubert Reeves with locations of planted ginkgo trees.",
     buttons: {
     website: "https://foret-hubert-reeves.github.io/GoogleEarth/index.html",
@@ -290,7 +290,7 @@ export class JsonService {
   }
 
   RespectMe = {
-    title: "RespectMe",
+    title: "Respect Me !",
     text1: "An app by the association Arborus, that help you respond to sexist and LGBTQ+phobic jokes/agressions with comebacks.",
     "text2": "\"Respect me ! est une APP qui te permet de répondre quand tu ne sais plus quoi répondre face à des propos lourds et inappropriés.<br>C’est une APP pour ne pas perdre la face et pour la faire perdre à celui/celle qui prononce ou agit de façon lourde ou inappropriée. <br>C’est aussi une façon de créer une nouvelle culture du Respect de l’Autre, de l’égalité !<br>Et si tu es témoin, cela te permet aussi d’intervenir !\"",
     image : "respectme.png",
@@ -316,7 +316,7 @@ export class JsonService {
     this.RespectMe, 
     // this.PastelDices2, 
     this.KaiSeki, this.GoutCha,
-    this.ForetHuberReeves, this.WaNaiSa, 
+    this.ForetHubertReeves, this.WaNaiSa, 
     this.justlmd, this.zhuiyi, this.spy, this.chamois,
     // this.PortfolioV2,
     // this.VariationsSurTroisVersDeMuxing,
