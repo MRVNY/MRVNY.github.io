@@ -31,6 +31,12 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
       </app-floating-window>
     </div>
 
+    <div class=" w-full flex justify-center">
+      <app-floating-window title="Short Film" class="w-fwindow">
+        <iframe width="100%" height="310" src="https://www.youtube.com/embed/XWWDk2ocD_U?si=vSZv5R3Ww19eynnm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </app-floating-window>
+    </div>
+
 
       <!-- TABLE -->
       <!-- <table class="w-full border-white border-2"> -->
@@ -48,7 +54,7 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
 
             <!-- youtube iframe -->
              <div class="w-full self-center flex justify-center items-center" *ngIf="project.youtube!==undefined">
-              <youtube-player *ngIf="project.youtube!==undefined" [videoId]="project.youtube" [width]="videoWidth" [height]="videoWidth"/>
+              <youtube-player *ngIf="project.youtube!==undefined" [videoId]="project.youtube" [width]="videoWidth" [height]="videoWidth/16*9"/>
              </div>
    
             <!-- buttons -->
@@ -70,7 +76,7 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
 export class PortfolioComponent implements OnInit{
   @ViewChild('window') floating!: FloatingWindowComponent;
   projects: any;
-  videoWidth: number = 300;
+  videoWidth: number = 350;
   constructor(private jsonService: JsonService, public _sanitizer: DomSanitizer) {}
 
   ngOnInit(): void {

@@ -261,7 +261,7 @@ export class JsonService {
     "title": "Wa-Nai-Sa",
     "text1": "Portfolio website for an artist.",
     buttons: {
-    website: "https://li-shu-meng.github.io/home",
+    website: "https://li-shu-meng.github.io/",
     },
     image : "lsm.jpg"
   }
@@ -307,15 +307,38 @@ export class JsonService {
     text1: "Collaboration with an artist"
   }
 
+  Beat = {
+    "title": "A Beat Of Space",
+    "text1": "You are a space cat and you must you must join your teammates by crossing all levels, but enemies are in your way!",
+    "text2": "Made with Unity for the GMTK Game Jam 2025",
+    youtube: "qTB-HK862pY",
+    buttons: {
+      "play": "https://krankerapfel.itch.io/a-beat-of-a-space",
+      "code": "https://github.com/KrankerApfel/GMTK-Jam-2025"
+    }
+  }
+
+  Flottant = {
+    "title": "Mémoire Flottante",
+    "text1": "Gamejam à l'ÉESI 2025",
+    youtube: "sMz-mnQ5Rlc",
+    buttons: {
+      "play": "https://le-petit-yolo.itch.io/memoire-flottante",
+      "code": "https://github.com/MRVNY/MemoireFlottante"
+    }
+  }
+
+
   devs = [this.qingyuan, this.justlmd, this.ecotopia, this.metarl, this.hcibook, this.hcigi, this.dedale, this.drone, this.birdy];
   games = [this.UntitledCameraGame, this.zhuiyi, this.floop, this.spy, this.chamois, this.dice, this.quadravity, this.enjmin, this.splatable, this.zi, this.flop];
 
   keywords = ["Game", "Unity", "UnrealEngine", "GameJam", "Web", "Dev", "DeepLearning", "HCI", "JavaScript", "HTML", "CSS", "Node.js"];
 
   projects = [
-    this.RespectMe, 
+    this.RespectMe,
     // this.PastelDices2, 
-    this.KaiSeki, this.GoutCha,
+    this.KaiSeki, this.Beat, this.Flottant,
+    this.GoutCha,
     this.ForetHubertReeves, this.WaNaiSa, 
     this.justlmd, this.zhuiyi, this.spy, this.chamois,
     // this.PortfolioV2,
