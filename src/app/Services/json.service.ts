@@ -309,7 +309,7 @@ export class JsonService {
 
   Beat = {
     "title": "A Beat Of Space",
-    "text1": "You are a space cat and you must you must join your teammates by crossing all levels, but enemies are in your way!",
+    "text1": "You are a space cat and you must join your teammates by crossing all levels, but enemies are in your way!",
     "text2": "Made with Unity for the GMTK Game Jam 2025",
     youtube: "qTB-HK862pY",
     buttons: {
